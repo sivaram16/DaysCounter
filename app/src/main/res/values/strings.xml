@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">DaysCounter</string>
+    <string name="tab_text_1">FUTURE EVENTS</string>
+    <string name="tab_text_2">PAST EVENTS</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="hint">choose once</string>
+    <string name="cfontsizehint">20</string>
+    <string name="tfontsizehint">20</string>
+    <string-array name="entry">
+        <item>only once</item>
+        <item>daily</item>
+        <item>weekly</item>
+        <item>monthly</item>
+        <item>yearly</item>
+    </string-array>
+    <string-array name="cfontsizeentry">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+        <item>38</item>
+    </string-array>
+    <string-array name="tfontsizeentry">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+        <item>38</item>
+    </string-array>
+
+</resources>

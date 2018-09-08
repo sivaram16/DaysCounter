@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sivaram.dayscounter.MainActivity">
+    <item
+        android:id="@+id/des"
+        android:orderInCategory="100"
+        android:title="Sort by days descending"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/as"
+        android:orderInCategory="100"
+        android:title="Sort by days ascending"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/time"
+        android:orderInCategory="100"
+        android:title="Sort by time added"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/con"
+        android:orderInCategory="100"
+        android:title="Contact me"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/re"
+        android:orderInCategory="100"
+        android:title="Remove Ads"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/cloud"
+        android:orderInCategory="100"
+        android:icon="@drawable/cloud"
+        app:showAsAction="always"
+        android:title="" />
+
+
+</menu>
