@@ -34,7 +34,6 @@ public class BootReceiver extends BroadcastReceiver {
     private static final long milWeek = 604800000L;
     private static final long milMonth = 2592000000L;
 
-
     @Override
     public void onReceive(Context context, Intent intent) {
         if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")) {
