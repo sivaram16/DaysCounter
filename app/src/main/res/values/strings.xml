@@ -51,4 +51,24 @@
         <item>38</item>
     </string-array>
 
+
+    <string name="title_activity_add_reminder">Add Reminder</string>
+    <string name="title_activity_edit_reminder">Edit Reminder</string>
+    <string name="title_activity_licenses">Licenses</string>
+
+    <string name="add_reminder">Reminder</string>
+    <string name="details">Details</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_off">Off</string>
+    <string name="repeat_no">Repetition Interval </string>
+    <string name="repeat_type">Type of Repetitions</string>
+
+    <string name="action_discard_reminder">Discard Reminder</string>
+    <string name="action_save_reminder">Save Reminder</string>
+
+    <string name="no_reminders">Click on the plus button below to begin creating your reminders!</string>
+
+
 </resources>

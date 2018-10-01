@@ -1,65 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="16dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="?attr/colorPrimary" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reminder_list"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <TextView
+        android:id="@+id/no_reminder_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/appbar_padding_top"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/no_reminders"/>
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_weight="1"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="@string/app_name">
-
-        </android.support.v7.widget.Toolbar>
-
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <android.support.design.widget.TabItem
-                android:id="@+id/tabItem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tab_text_1" />
-
-            <android.support.design.widget.TabItem
-                android:id="@+id/tabItem2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tab_text_2" />
-
-
-        </android.support.design.widget.TabLayout>
-    </android.support.design.widget.AppBarLayout>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/container"
+    <View
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:layout_height="2dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/toolbar_dropshadow" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    <com.getbase.floatingactionbutton.AddFloatingActionButton
+        android:id="@+id/add_reminder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_add_black_24dp" />
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        fab:fab_colorNormal="@color/accent"
+        fab:fab_colorPressed="@color/fab_pressed"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp" />
 
-</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>
