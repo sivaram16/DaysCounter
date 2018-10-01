@@ -7,6 +7,6 @@ It's a simple Event Reminder Which Gives Notification.
 ### Screenshots
 
 ![](Screenshots/Screenshot_1538403380.png)
-![](Screenshots/Screenshot_1538403385)
-![](Screenshots/Screenshot_1538403421)
+![](Screenshots/Screenshot_1538403385.png)
+![](Screenshots/Screenshot_1538403421.png)
 
